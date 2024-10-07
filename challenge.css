@@ -1,0 +1,43 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family:'Oswald';
+    box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        background: #000000;
+        color: #fff;
+    }
+#c{
+    margin: 0 auto;
+    padding: 2em;
+    width: 300px;
+    background: #1c1f2b;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+#c::after, #c::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red,blue,orange, pink, green, yellow, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 2%;
+    border-radius: 10px;
+
+}
+
+#c::before{
+    filter: blur(1.5rem);
+
+}

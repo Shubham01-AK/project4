@@ -1,0 +1,264 @@
+*{
+    margin:0%;
+    padding:0%;
+    font-family:'Oswald';
+    box-sizing: border-box;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        background: #000000;
+        color: #fff;
+    }
+
+    /* comment for nothing */
+
+
+#team{
+    padding: 80px 0;
+    color: hsl(0, 0%, 0%);
+}
+
+.row{
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    margin-left: 10%;
+    width: 300px;
+    border-radius: 15px;
+    
+}
+
+
+
+.about-col2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 20px;
+    font-family: 200;
+    background-color: #201b1b;
+    color: #b303e9;
+    position: relative;
+    border-radius: 10px;
+    
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.subtitle::after, .subtitle::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle),#ff0000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#ff00cb,#ff0000);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 1%;
+    border-radius: 8px;
+    animation: 3s spin linear infinite;
+}
+
+.a{
+    padding: 20px;
+}
+.subtitle::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b303e9;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    font-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b303e9;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #b303e9;
+    transform: translateY(-5px);
+}
+/* team member 2 */
+
+#team2{
+    padding: 80px 0;
+    color: hsl(0, 0%, 0%);
+}
+
+.row{
+    display:flex ;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    margin-left: 20%;
+    width: 300px;
+    border-radius: 15px;
+
+}
+.about-col2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size: 60px;
+    font-family: 600;
+    color: #b303e9;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b303e9;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    font-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #b303e9;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #b303e9;
+    transform: translateY(-5px);
+}
+/* coprwrite */
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.copyright i{
+    color: #f50288;
+}

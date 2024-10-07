@@ -1,0 +1,41 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.alternating {
+    border-bottom: 1px solid #ccc;
+}
+
+.graph-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.centered {
+    flex-direction: column;
+    text-align: center;
+}
+
+.below {
+    margin-top: 20px;
+}
